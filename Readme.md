@@ -8,8 +8,7 @@ Setup
 Clone this repository to your local machine.
 In the root directory, run npm install or yarn install to install all dependencies.
 Start the server by running node app.js or node . if you have nodemon installed.
-The API will be accessible at 
-Markup : - http://localhost:3000
+The API will be accessible at http://localhost:3000
 
 ### Get Latest-Release
 
