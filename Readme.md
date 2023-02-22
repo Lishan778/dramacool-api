@@ -1,5 +1,5 @@
 This API allows users to scrape data from dramacool9.co website. 
-The API endpoints available are /latest-releases, /popular-dramas, /upcoming-dramas, /k-show, and for video Straming links /streamsb/:title and /defultcdn/:title for Mutiple Server in one :P
+The API endpoints available are /latest-releases, /popular-dramas, /upcoming-dramas, /k-show, and for video Streaming links /streamsb and /defultcdn for Mutiple Server in one :P
 
 ### Requirements
 Node.js
