@@ -1,4 +1,5 @@
-This API allows users to scrape data from dramacool9.co website. The API endpoints available are /latest-releases, /popular-dramas, /upcoming-dramas, /k-show, and for video Straming links /streamsb/:title and /defultcdn/:title for Mutiple Server in one :P
+This API allows users to scrape data from dramacool9.co website. 
+The API endpoints available are /latest-releases, /popular-dramas, /upcoming-dramas, /k-show, and for video Straming links /streamsb/:title and /defultcdn/:title for Mutiple Server in one :P
 
 ### Requirements
 Node.js
@@ -18,7 +19,6 @@ Example request:
 
 ```
 GET http://localhost:3000/latest-releases
-
 ```
 
 Output >>
@@ -32,7 +32,6 @@ Output >>
 {...},
 ...
 ]
-
 ```
 
 ### Get Popular-dramas
@@ -43,8 +42,6 @@ Example request:
 
 ```
 GET http://localhost:3000/popular-dramas
-
-
 ```
 
 Output >>
@@ -56,7 +53,6 @@ Output >>
 {...},
 ...
 ]
-
 ```
 
 ### Get Upcoming-dramas
@@ -67,8 +63,6 @@ Example request:
 
 ```
 GET http://localhost:3000/upcoming-dramas
-
-
 ```
 
 Output >>
@@ -80,7 +74,6 @@ Output >>
 {...},
 ...
 ]
-
 ```
 
 ### Get k-show
@@ -91,8 +84,6 @@ Example request:
 
 ```
 GET http://localhost:3000/k-show
-
-
 ```
 
 Output >>
@@ -104,7 +95,6 @@ Output >>
 {...},
 ...
 ]
-
 ```
 
 ### Get Kshow-releases
@@ -115,7 +105,6 @@ Example request:
 
 ```
 GET http://localhost:3000/kshow-releases
-
 ```
 
 Output >>
@@ -129,7 +118,6 @@ Output >>
 {...},
 ...
 ]
-
 ```
 
 ### Get Streaming URLs
@@ -145,19 +133,16 @@ This endpoint returns link of streamsb servers for a particular drama.
 Example usage:
 
 ```
-
 fetch('https://kdarma-scraper.herokuapp.com/streamsb/crazy-romance')
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.log(error));
-
 ```
 
 Output >>
 
 ```
 [  {"dramaUrl":"https://streamsss.net/e/cet7st00qtb3"} ]
-
 ```
 
 Note: Replace "crazy-romance" with the title of the drama you want to get the streaming servers for.
@@ -169,19 +154,16 @@ This endpoint returns link of all servers for a particular drama.
 Example usage:
 
 ```
-
 fetch('https://kdarma-scraper.herokuapp.com/defultcdn/the-heavenly-idol-2023-episode-1')
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.log(error));
-
 ```
 
 Output >>
 
 ```
 [  {    "dramaUrl:https://asianhdplay.net/streaming.php?id=MzY5Njc0&title=The+Heavenly+Idol+%282023%29+episode+1&typesub=SUB"} ]
-
 ```
 
 Note: This a the Defult server that DramaCool Uses.
